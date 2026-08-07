@@ -1,3 +1,16 @@
+@use './utils/variables' as *;
+@use './utils/fonts';
+@use './blocks/card';
+@use './blocks/stars';
+@use './blocks/products';
+@use './blocks/header';
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: $font-primary;
+  color: $color-primary;
   margin: 0;
 }
