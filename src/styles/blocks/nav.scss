@@ -1,5 +1,4 @@
 @use '../utils/variables' as *;
-@use '../utils/fonts';
 
 .nav {
   display: flex;
@@ -54,5 +53,5 @@
   margin: 0;
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
 }

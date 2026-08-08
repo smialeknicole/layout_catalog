@@ -1,5 +1,4 @@
 @use './utils/variables' as *;
-@use './utils/fonts';
 @use './blocks/card';
 @use './blocks/stars';
 @use './blocks/catalog';
@@ -7,7 +6,7 @@
 @use './blocks/nav';
 
 body {
-  font-family: $font-primary;
+  font-family: 'Roboto', sans-serif;
   color: $color-primary;
   margin: 0;
 }
