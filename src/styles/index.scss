@@ -2,12 +2,9 @@
 @use './utils/fonts';
 @use './blocks/card';
 @use './blocks/stars';
-@use './blocks/products';
+@use './blocks/catalog';
 @use './blocks/header';
-
-* {
-  box-sizing: border-box;
-}
+@use './blocks/nav';
 
 body {
   font-family: $font-primary;

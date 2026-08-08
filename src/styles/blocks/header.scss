@@ -3,73 +3,15 @@
 
 .header {
   display: flex;
+  align-items: center;
   height: 60px;
   width: 100%;
   padding: 0 50px;
   background-color: white;
-  align-items: stretch;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba($hoover-button-background-color, 0.1);
   box-shadow: 0 2px 4px rgba($drop-shadow, 0.05);
 }
 
-.logo {
+.header__logo {
   display: flex;
-  align-items: center;
-  padding-top: 0.8px;
-}
-
-.nav {
-  display: flex;
-  margin-left: auto;
-  text-transform: uppercase;
-}
-
-.nav__list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-.nav__link {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  position: relative;
-  font-size: $font-size-base;
-  font-weight: 500;
-  transition: color 300ms linear;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.nav__link:link {
-  color: $color-primary;
-  text-decoration: none;
-}
-
-.nav__link:visited {
-  color: $hoover-text-color;
-  text-decoration: none;
-}
-
-.nav__link:hover,
-.nav__link.is-active {
-  color: $hoover-text-color;
-}
-
-.nav__link.is-active::after {
-  content: '';
-  display: block;
-  border-radius: 8px;
-  width: 100%;
-  height: 4px;
-  background-color: $hoover-text-color;
-  margin: 0;
-  position: absolute;
-  left: 0;
-  bottom: -0.5px;
 }

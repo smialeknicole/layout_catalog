@@ -22,7 +22,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 100px;
+  box-sizing: border-box;
   border: 1px solid rgba(97, 96, 112, 0.1);
   padding: 32px 16px 16px;
   border-radius: 5px;
@@ -78,7 +79,6 @@
   text-align: right;
   line-height: 16px;
   margin-bottom: 16px;
-  margin-left: 16px;
 }
 
 .card__price {
@@ -142,7 +142,6 @@
 .stars--4 .stars__star:nth-child(-n + 4),
 .stars--5 .stars__star:nth-child(-n + 5) {
   background-image: url('../images/star-active.svg');
-  background-position: center;
 }
 
 .catalog {
@@ -172,20 +171,17 @@
 
 .header {
   display: flex;
+  align-items: center;
   height: 60px;
   width: 100%;
   padding: 0 50px;
   background-color: white;
-  align-items: stretch;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.logo {
+.header__logo {
   display: flex;
-  align-items: center;
-  padding-top: 0.8px;
 }
 
 .nav {
@@ -199,6 +195,7 @@
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0;
 }
 
 .nav__link {
@@ -240,11 +237,6 @@
   margin: 0;
   position: absolute;
   left: 0;
-  bottom: -0.5px;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
