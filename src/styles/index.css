@@ -89,7 +89,10 @@
   text-align: center;
   line-height: 40px;
   text-decoration: none;
-  transition: color 300ms linear, background-color 300ms linear, border 300ms linear;
+  transition:
+    color 300ms linear,
+    background-color 300ms linear,
+    border 300ms linear;
 }
 
 .card__button:hover {
@@ -107,12 +110,17 @@
 .stars__star {
   width: 16px;
   height: 16px;
-  background-image: url("../images/star.svg");
+  background-image: url('../images/star.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
-.stars--1 .stars__star:nth-child(-n+1), .stars--2 .stars__star:nth-child(-n+2), .stars--3 .stars__star:nth-child(-n+3), .stars--4 .stars__star:nth-child(-n+4), .stars--5 .stars__star:nth-child(-n+5) {
-  background-image: url("../images/star-active.svg");
+
+.stars--1 .stars__star:nth-child(-n + 1),
+.stars--2 .stars__star:nth-child(-n + 2),
+.stars--3 .stars__star:nth-child(-n + 3),
+.stars--4 .stars__star:nth-child(-n + 4),
+.stars--5 .stars__star:nth-child(-n + 5) {
+  background-image: url('../images/star-active.svg');
 }
 
 .catalog {
@@ -199,7 +207,7 @@
 }
 
 .nav__link.is-active::after {
-  content: "";
+  content: '';
   display: block;
   border-radius: 8px;
   width: 100%;
@@ -212,7 +220,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   color: #060b35;
   margin: 0;
 }
